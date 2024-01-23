@@ -5,7 +5,8 @@
       <entry url="file://$PROJECT_DIR$">
         <entryData>
           <resourceRoots>
-            <path value="file://$PROJECT_DIR$/softuni_oop/classes_and_objects/person/project" />
+            <path value="file://$PROJECT_DIR$/softuni_oop/classes_and_objects/person/person" />
+            <path value="file://$PROJECT_DIR$/softuni_oop/classes_and_objects/shop/project" />
           </resourceRoots>
         </entryData>
       </entry>
