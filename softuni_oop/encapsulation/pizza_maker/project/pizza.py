@@ -39,17 +39,15 @@ class Pizza:
         self.__max_number_of_toppings = value
 
     def add_topping(self, topping):
-        if len(self.toppings) >= self.max_number_of_toppings:
+        if len(self.toppings) >= self.__max_number_of_toppings:
             raise ValueError("Not enough space for another topping")
-        if topping in self.toppings:
+        if topping.topping_type in self.toppings:
             self.toppings[topping.topping_type] += topping.weight
         else:
             self.toppings[topping.topping_type] = topping.weight
 
     def calculate_total_weight(self):
-        toppings_weight = 0
-        for k, v in self.toppings.items():
-            toppings_weight += v
+        toppings_weight = sum(self.toppings.values())
 
         return self.dough.weight + toppings_weight
 
