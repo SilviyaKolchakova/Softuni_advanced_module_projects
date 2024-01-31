@@ -7,7 +7,7 @@
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/softuni_oop/classes_and_objects/person/person" />
             <path value="file://$PROJECT_DIR$/softuni_oop/classes_and_objects/shop/project" />
-            <path value="file://$PROJECT_DIR$/softuni_oop/encapsulation/restaurant/project" />
+            <path value="file://$PROJECT_DIR$/softuni_oop/static_and_class_methods/gym/project" />
           </resourceRoots>
         </entryData>
       </entry>
