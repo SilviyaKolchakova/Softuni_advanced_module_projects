@@ -1,12 +1,18 @@
 def even_parameters(func):
     def wrapper(*args):
-        for el in args:
-            try:
-                if not el % 2 == 0:
-                    return "Please use only even numbers!"
-            except:
-                return "Please use only even numbers!"
-        return func(*args)
+        # for el in args:
+        #     try:
+        #         if not el % 2 == 0:
+        #             return "Please use only even numbers!"
+        #     except:
+        #         return "Please use only even numbers!"
+        if all([x % 2 == 0 for x in args]):
+            return func(*args)
+        else:
+            return f"Please use only even numbers!"
+
+
+
     return wrapper
 
 

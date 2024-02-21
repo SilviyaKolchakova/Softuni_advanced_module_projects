@@ -33,6 +33,10 @@ class Computer(ABC):
         self.processor = processor
         self.ram = ram
 
+    @staticmethod
+    def find_product_price(processor_price, ram):
+        pass
+
     def __repr__(self):
         return f"{self.manufacturer} {self.model} with {self.processor} and {self.ram}GB RAM"
 
